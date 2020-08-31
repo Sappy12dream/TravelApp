@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap');
+
+@import "./Breakpoints.scss";
+@import "./Home.scss";
+@import "./Header.scss";
+@import "./Main.scss";
+@import "./Nav.scss";
+@import "./Places.scss";
+@import "./Card.scss";
+@import "./Services.scss";
+@import "./Sidemenu.scss";
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: 'Red Rose', cursive, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+}
+
+
+
+.container {
+  width: 1560px;
+  min-width: 1560px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+
+  @include media("<=1560px") {
+    width: 1280px;
+    min-width: 1280px;
+  }
+
+  @include media("<=desktop") {
+    width: 100%;
+    max-width: 1280px;
+    min-width: 100%;
+  }
+
+  @include media("<=1080px") {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
+.flex {
+  display: flex;
+
+  .v-center {
+    align-items: center;
+  }
+
+  .space-between {
+    justify-content: space-between;
+  }
+
+  .space-around {
+    justify-content: space-around;
+  }
+  .center{
+    justify-content: center;
+  }
+}

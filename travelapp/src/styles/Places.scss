@@ -1,0 +1,59 @@
+.place-section{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background: white ;
+    .main-section{
+        width: 90%;
+        height: calc(100vh- 60px);
+        margin: 0 auto;
+        .top-container{
+            margin-top: 2rem;
+            width: 70%;
+            height: 150px;
+            .line{
+                width: 100%;
+                height: 4rem;
+                overflow: hidden;
+                margin-bottom: 10px;
+                h1{
+                    font-size: 3.2rem;
+                    text-transform: capitalize;
+                    letter-spacing: .2px;
+                }
+
+            }
+            .line2{
+                height: 5rem;
+                overflow: hidden;
+                p{
+                    font-size: 1rem;
+                }
+            }
+
+        }
+        .card-slider{
+            height: 300px;
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 2rem;
+            display: flex;
+            padding-bottom: 1rem;
+            align-items: flex-end;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .controller{
+            width: 100px;
+            height: 50px;
+            display: flex;
+            float: right;
+            margin-top: 1rem;
+            justify-content: space-between;
+                
+            
+           
+        }
+    }
+
+}

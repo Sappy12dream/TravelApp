@@ -1,0 +1,90 @@
+nav {
+    
+    width: 90%;
+    margin: 0 auto;
+    height: 60px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+        font-size: 32px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        z-index: 8;
+    }
+
+    .toggler {
+        cursor: pointer;
+        z-index: 5;
+    }
+
+
+}
+
+.sidenav-container {
+    overflow: hidden;
+    width: 430px;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    background-color: lightgoldenrodyellow;
+    padding: 3rem 2rem;
+
+    li {
+        list-style: none;
+    }
+
+    .wrapper {
+        width: 100%;
+        display: flex;
+
+        .about-section {
+            width: 30%;
+            margin-right: 4rem;
+        }
+
+        .style {
+            overflow: hidden;
+            h3 {
+                text-transform: capitalize;
+                font-size: 1.4rem;
+                letter-spacing: .4px;
+            }
+
+            a {
+                font-size: .8rem;
+                text-transform: capitalize;
+                position: relative;
+                transition: width .5s linear;
+
+
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    bottom: 0;
+                    left: 0;
+                    width: 0;
+                    height: 2px;
+                    background: black;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                    right: 0;
+                }
+
+            }
+
+            .hover {
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

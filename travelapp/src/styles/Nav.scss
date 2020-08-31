@@ -1,0 +1,76 @@
+.navigation {
+    width: 50%;
+    height: 300px;
+    background:  lightgoldenrodyellow;
+    z-index: 4;
+    transform: translateY(-100%);
+    position: fixed;
+    padding: 5rem 4.2rem;
+    flex-direction: column;
+    transition: transform .5s linear;
+
+    li {
+        list-style: none;
+    }
+
+    .wrap {
+        width: 100%;
+        height: 100%;
+
+        .about {
+            width: 200px;
+        }
+
+        .places {
+
+            width: 70%;
+
+            ul:nth-child(1) {
+                margin-right: 20px;
+            }
+        }
+
+        .common {
+
+
+            h3 {
+                text-transform: capitalize;
+                font-size: 1.4rem;
+                letter-spacing: .4px;
+            }
+
+            a {
+                font-size: .8rem;
+                text-transform: capitalize;
+                position: relative;
+                transition: width .5s linear;
+
+
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    bottom: 0;
+                    left: 0;
+                    width: 0;
+                    height: 2px;
+                    background: black;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                    right: 0;
+                }
+
+            }
+
+            .flex {
+                width: 100%;
+            }
+
+
+
+        }
+
+    }
+}
