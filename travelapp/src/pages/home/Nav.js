@@ -8,10 +8,10 @@ function Nav() {
       <nav className="navigation flex">
         <div className="wrap flex">
           <div className="common about">
-           <NavLink to="/about"><h3>about</h3></NavLink> 
+            <h3>about</h3>
             <ul>
               <li>
-                <p>History of bhopal</p>
+               <NavLink to="/about"><p>History of bhopal</p></NavLink> 
               </li>
               <li>
                 <a>web developer</a>

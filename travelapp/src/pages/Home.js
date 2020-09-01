@@ -30,7 +30,7 @@ function Home() {
           <div className="strip">
             <h3>Want to explore Bhopal more?</h3>
             <span>
-              <NavLink to="/services">
+              <NavLink to="/about">
               <a className="flex v-center" href="/">
                 Let's go
                 <img src={Arrow} width="20px" height="20px" alt="right-arrow" />

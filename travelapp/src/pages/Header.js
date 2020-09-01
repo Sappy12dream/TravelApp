@@ -59,7 +59,7 @@ function Header() {
   });
   return (
     <div className="nav flex space-between v-center">
-     <NavLink to="/"> <div className="logo">bpl.</div></NavLink>
+     <NavLink to="/"> <div className="logo">bhopal.</div></NavLink>
 
       <div className="toggler">
         {toggle.opened ? (
