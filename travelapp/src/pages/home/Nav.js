@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
 
 function Nav() {
   
@@ -7,10 +8,10 @@ function Nav() {
       <nav className="navigation flex">
         <div className="wrap flex">
           <div className="common about">
-            <h3>about</h3>
+           <NavLink to="/about"><h3>about</h3></NavLink> 
             <ul>
               <li>
-                <a>History of bhopal</a>
+                <p>History of bhopal</p>
               </li>
               <li>
                 <a>web developer</a>
