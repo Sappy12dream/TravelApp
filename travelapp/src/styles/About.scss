@@ -1,8 +1,12 @@
+.overflow{
+overflow: hidden;
+}
 .about-area{
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 80px);
     display: flex;
     padding: 1.8rem;
+    overflow: hidden;
     .col-1{
     
         width: 40%;

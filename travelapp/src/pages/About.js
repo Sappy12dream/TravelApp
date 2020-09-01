@@ -1,9 +1,15 @@
 import React from "react";
+import SideNav from "./places/SideNav";
+import Sidenavbar from "./Sidenavbar";
+
 
 function About() {
   return (
-    <div className="container">
-      <section className="about-area">
+    <div className="container overflow">
+           <SideNav />
+<Sidenavbar/>
+      <div className="about-area">
+ 
         <div className="col-1">
           <div className="line">
             <h1>
@@ -89,7 +95,7 @@ function About() {
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
-      </section>
+      </div>
     </div>
   );
 }
