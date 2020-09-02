@@ -13,12 +13,6 @@ function Nav() {
               <li>
                <NavLink to="/about"><p>History of bhopal</p></NavLink> 
               </li>
-              <li>
-                <a>web developer</a>
-              </li>
-              <li>
-                <a>content creater</a>
-              </li>
             </ul>
           </div>
           <div className="common places">

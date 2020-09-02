@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
 
 function SideNav({img, setsidemenu}) {
   return (
@@ -8,14 +9,9 @@ function SideNav({img, setsidemenu}) {
           <h3>about</h3>
           <ul>
             <li>
-              <a>History of bhopal</a>
+            <NavLink to="/about"><p>History & facts </p></NavLink> 
             </li>
-            <li>
-              <a>web developer</a>
-            </li>
-            <li>
-              <a>content creater</a>
-            </li>
+            
           </ul>
         </div>
         <div className="style tour-section">

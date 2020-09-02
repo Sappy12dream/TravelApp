@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from "react-router-dom";
+import { withRouter, NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 import gsap from "gsap";
 import Bars from "../images/menu.png";
@@ -7,9 +7,14 @@ import close from "../images/cancel.png";
 
 let tl = gsap.timeline();
 
-function Sidenavbar() {
+function Sidenavbar({history}) {
     const [sidemenu, setsidemenu] = useState({ opened: false });
-
+    useEffect(() => {
+      //Listening for page changes.
+      history.listen(() => {
+        setsidemenu({ opened: false });
+      });
+    });
     useEffect(() => {
         if (sidemenu.opened === true) {
           tl.to(".sidenav-container", {
@@ -82,4 +87,4 @@ function Sidenavbar() {
     )
 }
 
-export default Sidenavbar
+export default withRouter(Sidenavbar);

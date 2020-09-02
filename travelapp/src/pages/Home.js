@@ -1,5 +1,6 @@
-import React from "react";
+import React, {useEffect}from "react";
 import {NavLink} from "react-router-dom";
+import gsap from "gsap"
 
 
 //components
@@ -16,7 +17,7 @@ function Home() {
     <section className="home">
       <div className="container flex">
         <div className="col">
-          <Header />
+          <Header  />
           <Main />
         </div>
         <div className="col">

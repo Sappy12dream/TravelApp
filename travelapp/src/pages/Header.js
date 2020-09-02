@@ -2,11 +2,17 @@ import React, { useState, useEffect } from "react";
 import Bars from "../images/menu.png";
 import close from "../images/cancel.png";
 import gsap from "gsap";
-import {NavLink} from "react-router-dom";
+import {withRouter, NavLink} from "react-router-dom";
 
 let tl = gsap.timeline();
-function Header() {
+function Header({history}) {
   const [toggle, settoggle] = useState({ opened: false });
+ useEffect(() => {
+    //Listening for page changes.
+    history.listen(() => {
+      settoggle({ opened: false });
+    });
+  });
   useEffect(() => {
     if (toggle.opened === true) {
       tl.to(".navigation", {
@@ -80,4 +86,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default withRouter(Header);
